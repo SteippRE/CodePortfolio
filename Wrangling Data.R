@@ -44,23 +44,24 @@
       data_set %>% select(age)         #returns only the age columns of the dataset
 
   library(tidyr) #
-    gather(data_set, key, value)                             #use when you have columns headers in a dataframe that are values not variables
-                                                             #makes a wide table long
+    gather(data_set, key, value)       #use when you have columns headers in a dataframe that are values not variables
+                                       #makes a wide table long
     
     separate(data_set, into = c("col1", "col2"), sep = " ")  #use when multiple variable are stored in one column
     
-    spread(dataframe, key, value)                            #makes a long table wide
+    spread(dataframe, key, value)      #makes a long table wide
                                   
 
 #Step 3: Prepare your data for analysis with the following functions
 
-  library(stringr) # four main functions; A)character manipulation, B) whitespace manipulation, C) pattern matching, D)locale sensititve
+  library(stringr) # four main functions; A)character manipulation, B) whitespace manipulation, 
+                   # C) pattern matching, D)locale sensititve
     # A)length of string
         str_length(string)
         
     # B)removes whitespace from the beginning and end of string
         str_trim(string, "both")     # 2 arguments; what you want to trim, string, 
-                                                # from which side should it be trimmed, ("both", "left", "right")
+                                     # from which side should it be trimmed, ("both", "left", "right")
     # B)adds whitespace to a string
         str_pad(string, width, "both" , pad = ) # 4 arguments; what you want to pad, string 
                                                 # what the width of the string should be, width
@@ -68,11 +69,11 @@
                                                 # how should the sting be padded,  pad = ""
     # C)searches for string in vector
         str_detect(string, pattern)  # 2 arguements; what to look in, string
-                                                # what pattern to detect, pattern
+                                     # what pattern to detect, pattern
     # C)replaces string in vector
         str_replace(string, pattern, replace) # 3 arguements; what to look in, string
-                                                # what pattern to detect, pattern
-                                                # what to replace the pattern with, replace
+                                              # what pattern to detect, pattern
+                                              # what to replace the pattern with, replace
     # D)change case of string
         str_to_lower(string)        #changes string to all lower case characters
         str_to_upper(string)        #changes strign to all upper case characters
