@@ -1,7 +1,7 @@
 # CodePortfolio
 Useful code snipets for the Epicycle of Data Science
 
-## Four Code Files 
+## Code File Details
   1. Data Importing
       - Covers the basics for importing data from flat and excel files
   2. Data Wrangling
