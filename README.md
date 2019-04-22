@@ -1,5 +1,5 @@
 # CodePortfolio
-Useful code snipets for the Epicycle of Data Science
+This repository contains useful code snipets for the Epicycle of Data Science
 
 ## Code File Details
   1. Data Importing
